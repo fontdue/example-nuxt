@@ -16,12 +16,12 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://js.fontdue.com/fontdue.css' },
+      { rel: 'stylesheet', href: 'https://js.fontdue.xyz/fontdue.css' },
     ],
     script: [
       {
         hid: 'fontdue',
-        src: 'https://js.fontdue.com/fontdue.js',
+        src: 'https://js.fontdue.xyz/fontdue.js',
         callback: () => {
           console.log('loaded');
           fontdue.initialize({
@@ -59,7 +59,6 @@ export default {
       // Extend only webpack config for client-bundle
       if (isClient) {
         config.devtool = 'source-map';
-        config.output.jsonpFunction =  'nuxtJsonP';
       }
     }
   }
