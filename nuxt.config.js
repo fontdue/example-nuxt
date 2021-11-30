@@ -15,7 +15,20 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://js.fontdue.com/fontdue.css' },
+    ],
+    script: [
+      {
+        hid: 'fontdue',
+        src: 'https://js.fontdue.com/fontdue.js',
+        callback: () => {
+          console.log('loaded');
+          fontdue.initialize({
+            url: 'https://example.fontdue.xyz',
+          })
+        }
+      }
     ]
   },
 
