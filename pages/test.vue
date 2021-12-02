@@ -1,10 +1,8 @@
 <template>
 <div>
-  <h1>Fontdue nuxt example</h1>
+  <h1>Another page</h1>
 
-  <div><NuxtLink to="/test">Test link</NuxtLink></div>
-
-  <fontdue-buy-button collection-slug="ibm-plex"></fontdue-buy-button>
+  <fontdue-buy-button collection-slug="rubik"></fontdue-buy-button>
 
   <fontdue-store-modal></fontdue-store-modal>
 </div>

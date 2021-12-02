@@ -23,7 +23,6 @@ export default {
         hid: 'fontdue',
         src: 'https://js.fontdue.xyz/fontdue.js',
         callback: () => {
-          console.log('loaded');
           fontdue.initialize({
             url: 'https://example.fontdue.xyz',
           })
